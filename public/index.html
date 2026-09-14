@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
     <style>
       body {
         margin: 0;
@@ -24,17 +25,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 1000;
       }
-      .top-dropdown-ui {
-        display: block;
-        position: absolute;
-        width: 40%;
-        height: 250px;
-        top: 60px;
-        right: 10px;
-        background-color: #00A0FF;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
+      .top-dropdown-btn {
+        font-size: 16px;
+        text-align: left;
+        height: 50px;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #0090f0;
+        background: none;
+        color: #fff;
+        background-color: #00A0F4;
+        cursor: pointer;
+        z-index: 999;
+      }
+      .top-dropdown-btn:hover {
+        background-color: #0090f0;
       }
     </style>
   </head>
@@ -43,10 +50,21 @@
      <div class="top-bar-frame">
       <img src="icon.png" alt="DoxiGame Icon" style="height: 100%; margin-right: 10px; position: absolute; left: 5px;">
       <h1 style="margin: 0; font-size: 28px; position: absolute; left: 70px; text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);">DoxiGame</h1>
-      <button class="fa-sharp fa-solid fa-bars-staggered" style="background: none; border: none; color: white; font-size: 24px; cursor: pointer; position: absolute; right: 15px;"></button>
+      <button class="fa-sharp fa-solid fa-bars-staggered dropdown-btn" id="dropdown-btn"></button>
      </div>
      <div class="top-dropdown-ui">
-       
+       <button class="top-dropdown-btn" id="home-dropdown-btn"><div class="fa-solid fa-house" style="margin-right: 10px; position: absolute; right: 10px; "> HOME</div></button>
+       <button class="top-dropdown-btn" id="games-dropdown-btn"><div class="fa-solid fa-gamepad" style="margin-right: 10px; position: absolute; right: 10px;"> GAMES</div></button>
+       <button class="top-dropdown-btn" id="settings-dropdown-btn"><div class="fa-solid fa-gear" style="margin-right: 10px; position: absolute; right: 10px;"> SETTINGS</div></button>
+       <button class="top-dropdown-btn" id="about-dropdown-btn"><div class="fa-solid fa-info-circle" style="margin-right: 10px; position: absolute; right: 10px;"> ABOUT</div></button>
+       <button class="top-dropdown-btn" id="discord-dropdown-btn"><div class="fa-brands fa-discord" style="margin-right: 10px; position: absolute; right: 10px;"> DISCORD</div></button>
      </div>
+     <div class="home-page">
+
+     </div>
+     <div class="games-page">
+
+     </div>
+     <script src="main.js"></script>
   </body>
 </html>
