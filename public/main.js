@@ -30,10 +30,22 @@ class TopDropdown {
       } else {
         this.dropdownTgl = 1;
       }
-    } 
+    }
   }
-
-  
+  slidePage(pageSlide) {
+    const Home = document.querySelector('.home-page');
+    const Games = document.querySelector('.game-page');
+    if (pageSlide == "home") {
+      Home.style.display = "block";
+      Games.style.display = "none";
+    } else if (pageSlide == "games") {
+      Home.style.display = "none";
+      Games.style.display = "block";
+    }
+  }
 }
 const a = new TopDropdown();
+document.getElementById("home-dropdown-btn").addEventListener('click', () => a.slidePage("home"));
+document.getElementById("games-dropdown-btn").addEventListener('click', () => a.slidePage("games"));
+document.getElementById("start-button").addEventListener('click', () => a.slidePage("games"));
 document.getElementById("dropdown-btn").addEventListener('click', () => a.dropdownToggle());
