@@ -1,5 +1,8 @@
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playwrite+NZ+Basic:wght@100..400&family=Sekuya&display=swap" rel="stylesheet">
     <title>DoxiGame</title>
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" type="text/css" href="main.css">
@@ -9,16 +12,19 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="homePage.css">
+    <link rel="stylesheet" href="gamePage.css">
     <style>
       body {
         margin: 0;
         padding: 0;
         background-color: #f0f0f0;
-        font-family: Arial, sans-serif;
+        font-family: "Sekuya", system-ui;
       }
       .top-bar-frame {
         width: 100%;
         height: 60px;
+        top: 0;
         background-color: #00A1FF;
         position: fixed;
         color: #fff;
@@ -60,11 +66,20 @@
        <button class="top-dropdown-btn" id="discord-dropdown-btn"><div class="fa-brands fa-discord" style="margin-right: 10px; position: absolute; right: 10px;"> DISCORD</div></button>
      </div>
      <div class="home-page">
-
+      <div class="blank-space" style=" height: 60px; background-color: #00A1FF;"></div>
+      <img src="icon.png" alt="DoxiGame Icon" class="start-icon">
+      <h1 style="font-size: 44px; margin-top: 20px; text-align: center;"> the DoxiGame</h1>
+      <p class="home-page-paragraph" style="text-align: center; font-size: 20px; margin-top: 10px; font-family: serif;"></p>
+      <button class="start-button" id="start-button">Get Started</button>
+      
+      
      </div>
-     <div class="games-page">
-
+     <div class="game-page">
+      <div class="rak1" style="background-color: transparent; height: 150px; width: 100%; margin-top: 70px; overflow: hidden; display: flex; flex-direction: row;">
+        <button class="rak1-btn" id="" style="border: none;"><img src="blackNumberLogo.png" style="margin-right: 1px; height: 100%; width: 150px; cursor: crosshair; border-radius: 10px; border: 1px solid #0f0f00;"></button>
+      </div>
      </div>
      <script src="main.js"></script>
+     <script src="info.js"></script>
   </body>
 </html>
