@@ -38,12 +38,23 @@ class TopDropdown {
     if (pageSlide == "home") {
       Home.style.display = "block";
       Games.style.display = "none";
+      if (this.dropdownTgl !== 1) {
+        this.dropdownToggle()
+      }
     } else if (pageSlide == "games") {
       Home.style.display = "none";
       Games.style.display = "block";
+      if (this.dropdownTgl !== 1) {
+        this.dropdownToggle()
+      }
     }
   }
 }
+const a = new TopDropdown();
+document.getElementById("home-dropdown-btn").addEventListener('click', () => a.slidePage("home"));
+document.getElementById("games-dropdown-btn").addEventListener('click', () => a.slidePage("games"));
+document.getElementById("start-button").addEventListener('click', () => a.slidePage("games"));
+document.getElementById("dropdown-btn").addEventListener('click', () => a.dropdownToggle());
 const a = new TopDropdown();
 document.getElementById("home-dropdown-btn").addEventListener('click', () => a.slidePage("home"));
 document.getElementById("games-dropdown-btn").addEventListener('click', () => a.slidePage("games"));
