@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playwrite+NZ+Basic:wght@100..400&family=Sekuya&display=swap" rel="stylesheet">
+    <title>DoxiGame</title>
+    <link rel="icon" type="image/png" href="../asset/icon.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../CSS/blackcard.css">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #090909;
+        font-family: "Sekuya", system-ui;
+        overflow: hidden;
+      }
+      .blackcardBar {
+        position: absolute;
+        height: 20%;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: transparent;
+        border: 1px solid #f0f0f0;
+        border-radius: 5px;
+        justify-content: center;
+        display: flex;
+        overflow: hidden;
+      }
+      .blackbuttonplace {
+        position: absolute;
+        height: 30%;
+        width: 80%;
+        left: 50%;
+        top: 60%;
+        transform: translateX(-50%);
+        background: transparent;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="height: 50px; width: 205px; color: #f0f0f0; margin-left: 10px; font-size: xxlarge;">BlackNumber </h1>
+     <div class="blackcardBar">
+        <img src="" class="blackcard1">
+        <img src="" class="blackcard2">
+        <img src="" class="blackcard3">
+        <img src="" class="blackcard4">
+        <img src="" class="blackcard5">
+     </div>
+     <div class="blackbuttonplace">
+      <button class="navbtn" id="checkbtn">check</button>
+      <button class="navbtn">reveal</button>
+      <button class="navbtn">leave</button>
+      <button class="navbtn">how to play?</button>
+      <button class="navbtn">reset</button>
+      <script src="../JS/blacknumber.js"></script>
+  </body>
+</html>
