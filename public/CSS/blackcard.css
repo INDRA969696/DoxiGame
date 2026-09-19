@@ -1,0 +1,24 @@
+.blackcard1, .blackcard2, .blackcard3, .blackcard4, .blackcard5 {
+  height: 100%;
+  min-width: 15px;
+  max-width: 150px;
+  display: none;
+  content: url("");
+}
+.navbtn {
+  width: 210px;
+  height: 35px;
+  flex-shrink: 0;
+  margin: 5px;
+  font-size: x-large;
+  color: #f0f0f0;
+  background-color: #090909;
+  border:1px solid #f0f0f0;
+
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navbtn:hover {
+  background-color: #333333;
+  scale: 103%;
+}
